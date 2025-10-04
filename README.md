@@ -8,12 +8,6 @@ Este proyecto es una implementación digital y personalizable del tradicional ju
 
 Está diseñado para que dos jugadores puedan competir en el mismo dispositivo. El juego detecta automáticamente las condiciones de victoria o empate y muestra el turno del jugador actual.
 
-## 📸 Captura de Pantalla
-
-*(Aquí puedes agregar una captura de pantalla de tu juego en acción)*
-
-![Captura de pantalla del juego Tic-Tac-Toe](https://via.placeholder.com/600x400.png?text=Mi+Juego+Tic-Tac-Toe+Modular)
-
 ## ✨ Características
 
 * **Panel de Configuración:** Permite ajustar el tamaño del tablero y los símbolos de los jugadores antes de iniciar.
