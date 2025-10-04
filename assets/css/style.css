@@ -1,0 +1,135 @@
+/* DEFINICION DE VARIABLES */
+:root {
+    color-scheme: light dark;
+    --body-bg-light: #bcbcbc;
+    --body-bg-dark: #404040;
+    --text-light: #000;
+    --text-dark: #fff;
+    --cell-light: #ebebeb;
+    --cell-dark: #000;
+    --cell-light-hover: #f0f0f0;
+    --cell-dark-hover: #aaaaaa;
+    --shadow-light: #000;
+    --shadow-dark: #f4f4f4;
+    --text-shadow-light: #000;
+    --text-shadow-dark: #808080;
+    --win-text-light: rgb(51, 0, 206);
+    --win-text-dark: rgb(255, 200, 0);
+    --empate-text-light: rgb(0, 198, 0);
+    --empate-text-dark: rgb(198, 0, 0);
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: light-dark(var(--body-bg-light), var(--body-bg-dark));
+}
+
+/* CONTROL PANEL */
+#control-panel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#control-comandos {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+#row-1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+#inputs {
+    text-align: right;
+}
+
+/* CONTROL PANEL TEXTOS */
+#control-text {
+    width: 70%;
+    padding-left: 10px;
+}
+#control-text h2, h6 {
+    text-align: center;
+}
+h6, #parrafos #text {
+    margin-bottom: 5px;
+}
+#parrafos {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#player-turn {
+    font-size: 25px;
+}
+
+/* CONTROL COMANDOS */
+label {
+    display: inline-block;
+    width: 70px;
+    text-align: left;
+}
+input, select {
+    width: 50px;
+    text-align: right;
+}
+button {
+    width: 100%;
+}
+
+/* BOARD GAME */
+#board-game {
+    display: grid;
+    width: 650px;
+    height: 650px;
+    gap: 0px;
+    background-color: #000;
+    box-shadow: light-dark(var(--shadow-light), var(--shadow-dark)) 0px 0px 10px;
+}
+
+/* @media (min-width: 600px) {
+    #board-game {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 900px) {
+    #board-game {
+        width: 450px;
+        height: 450px;
+    }
+} */
+/* CELDAS */
+.cell {
+    color: light-dark(var(--text-light), var(--text-dark));
+    background-color: light-dark(var(--cell-light), var(--cell-dark));
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+    text-shadow: light-dark(var(--text-shadow-light), var(--text-shadow-dark)) 0px 0px 10px;
+}
+.cell:hover {
+    background-color: light-dark(var(--cell-light-hover), var(--cell-dark-hover));
+}
+.cell:active {
+    background-color: #e0e0e0;
+}

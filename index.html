@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El juego del TicTacToe">
+    <meta name="keywords" content="TicTacToe, Gato, 3 en raya, Cruces y ceros">
+    <meta name="author" content="Jr">
+    <title>TicTacToe</title>
+
+    <!-- Enlaces -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/tictactoe.png" type="image/png">
+
+</head>
+<body>
+    <div id="juego">
+        <div id="control-panel">
+            <div id="control-comandos">
+                <div id="row-1">
+                    <div id="labels">
+                        <label for="board-size">Size</label>
+                        <label for="symbol-p1">Player_1</label>
+                        <label for="symbol-p2">Player_2</label>
+                    </div>
+                    <div id="inputs">
+                        <select name="" id="board-size"></select>
+                        <input type="text" id="symbol-p1" value="X">
+                        <input type="text" id="symbol-p2" value="O">
+                    </div>
+                </div>
+                <div id="row-2">
+                    <button id="play">Play!</button>
+                </div>
+            </div>
+            <div id="control-text">
+                <h2>TicTacToe</h2>
+                <h6>(Tres en raya - Ceros y Cruces - Gato)</h6>
+                <div id="parrafos">
+                    <p id="text">
+                        El clasico juego TicTacToe pero modular
+                    </p>
+                    <p id="player-turn">
+                        <!-- Turno del jugador: <span id="player-turn"></span> -->
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="board-game">
+        </div>
+    </div>
+    <script src="assets/js/script.js" type="module"></script>
+</body>
+</html>
