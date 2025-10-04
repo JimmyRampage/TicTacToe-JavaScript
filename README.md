@@ -42,25 +42,6 @@ tictactoe-modular/
 └── README.md               # Documentación del proyecto
 ```
 
-## 🚀 Instalación y Uso
-
-No se requiere ninguna instalación compleja. Simplemente sigue estos pasos:
-
-1. Clona este repositorio en tu máquina local:
-
-    ```bash
-    git clone https://github.com/tu-usuario/tu-repositorio.git
-    ```
-
-2. Navega a la carpeta del proyecto:
-
-    ```bash
-    cd tu-repositorio
-    ```
-
-3. Abre el archivo `index.html` en tu navegador web preferido (como Chrome, Firefox o Edge).
-4. ¡Listo! Configura la partida y empieza a jugar.
-
 ## 🎮 Cómo Jugar
 
 1. En el panel de control, selecciona el **tamaño del tablero** en el menú desplegable "Size".
